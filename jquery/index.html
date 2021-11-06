@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>JQUERY</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </head>
+
+    <header>
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                  <img src="gambar/logo.png" alt="logo" style="max-width: 120px;">
+                </a>
+                <button class="openbtn" onclick="openNav()">&#9776; MENU</button>
+
+            </div>
+        </nav>
+
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">News</a>
+            <a href="#">About</a>
+            <button class="dropdown-btn">Tutorial
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">jQuery</a>
+                <a href="#">PHP</a>
+            </div>
+            <a href="#">FAQ</a>
+            
+        </div>
+          
+          
+    </header>
+
+    <body class="bg">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-9 col-sm-12 detail-portfolio">
+                    <div class="row row-cols-1 row-cols-md-3 g-3 ">
+                        <div class="col">
+                            <div class="card h-100">
+                                <a href="#"><img src="gambar/css.png" class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                <a href="#" style="text-decoration: none;"><h5 class="card-title">Mengatur Tata Letak Gambar Secara Vertikal dengan CSS</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <a href="#"><img src="gambar/html.png" class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                <a href="#" style="text-decoration: none;"><h5 class="card-title">Cara Menampilkan PDF di HTML</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <a href="#"><img src="gambar/jquery.png" class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                <a href="#" style="text-decoration: none;"><h5 class="card-title">Menampilkan Peta Google Maps dengan gMaps</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <a href="#"><img src="gambar/mysqli.jpg" class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                <a href="#" style="text-decoration: none;"><h5 class="card-title">Menampilkan Data dengan MySQLi dan PHP</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-12 widget-portfolio">
+                    <div class="widget-portfolio-terbaru">
+                        <h3 class="text-center">Rekomendasi Artikel</h3>
+                        <ul>
+                            <li>
+                                <div class="gambar-portfolio-terbaru">
+                                    <img src="gambar/htm1.png">
+                                </div>
+                                <div class="judul-portoflio-terbaru">
+                                    <a href="">Membuat Menu Responsive dengan HTML dan CSS</a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="gambar-portfolio-terbaru">
+                                    <img src="gambar/mysqli2.png">
+                                </div>
+                                <div class="judul-portoflio-terbaru">
+                                    <a href="">Fungsi Date Time MySQL</a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="gambar-portfolio-terbaru">
+                                    <img src="gambar/php.png">
+                                </div>
+                                <div class="judul-portoflio-terbaru">
+                                    <a href="">Fungsi Date Time MySQL</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer bg-dark text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-1 pb-0">
+                <h5>Contact Us :</h5>
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating m-1" href="#!" role="button">
+                    <img src="gambar/facebook.png" style="width: 40px;">
+                </a>
+          
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating m-1" href="#!" role="button">
+                    <img src="gambar/twitter.png" style="width: 40px;">
+                </a>
+          
+                <!-- Google -->
+                <a class="btn btn-link btn-floating m-1" href="#!" role="button">
+                    <img src="gambar/gmail.png" style="width: 40px;">
+                </a>
+          
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating m-1" href="#!" role="button">
+                    <img src="gambar/instagram.png" style="width: 40px;">
+                </a>
+          
+                <!-- Github -->
+                <a class="btn btn-link btn-floating m-1" href="#!" role="button">
+                    <img src="gambar/github.png" style="width: 40px;">
+                </a>
+              </section>
+              <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              &copy; 2021 Copyright CodeSample
+            </div>
+            <!-- Copyright -->
+          </div>
+        
+        <script>
+            function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+            }
+
+            /* Set the width of the sidebar to 0 (hide it) */
+            function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+            }
+
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+
+            for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+                } else {
+                dropdownContent.style.display = "block";
+                }
+            });
+            }
+            </script>
+
+    </body>
+</html>
