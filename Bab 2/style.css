@@ -1,0 +1,54 @@
+#tabel-siswa {
+    border-collapse: collapse;
+    background-image: url(Gambar/background.jpg);
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+
+
+    margin: auto;
+
+}
+
+#tabel-siswa td {
+    padding: 20px;
+}
+
+#tabel-detail {
+
+    border-collapse: collapse;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+
+    margin: auto;
+}
+
+#tabel-detail td {
+    padding: 20px;
+}
+
+#tabel-detail h3 {
+    font-size: 32px;
+}
+
+#tabel-siswa h3 {
+    font-size: 32px;
+}
+
+.link {
+    color: red;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: royalblue;
+}
+
+.kembali {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
