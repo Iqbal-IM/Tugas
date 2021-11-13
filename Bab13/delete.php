@@ -2,6 +2,7 @@
 
 require_once("connection.php");
 
+
 if (isset($_GET["id_barang"])) $id = $_GET["id_barang"];
 else {
     echo "ID Barang Tidak Ditemukan! <a href='index.php'>Kembali</a>";

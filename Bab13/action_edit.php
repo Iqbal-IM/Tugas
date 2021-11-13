@@ -2,7 +2,7 @@
 
 require_once("connection.php");
 
-
+// var_dump($_POST["id_barang"]);
 if (isset($_POST["id_barang"])) $id = $_POST["id_barang"];
 else {
     echo "ID Barang Tidak Ditemukan! <a href='index.php'>Kembali</a>";
@@ -16,8 +16,8 @@ if (isset($_POST['harga'])) $harga = $_POST['harga'];
 $query = "
     UPDATE tb_barang SET 
         nama_barang = '{$nama}', 
-        harga = '{$harga}' 
-    WHERE id_barang = '{$id}'";
+        harga = '{$harga}'
+WHERE id_barang = '{$id}'";
 
 $insert = mysqli_query($mysqli, $query);
 

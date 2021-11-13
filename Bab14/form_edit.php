@@ -2,6 +2,11 @@
 
 require_once("connection.php");
 
+require_once("session_check.php");
+
+if ($sessionStatus == false) {
+    header("Location: index.php");
+}
 
 $error = 0;
 
@@ -57,10 +62,13 @@ foreach ($result as $toko) {
             <div class="row d-flex justify-content-center">
                 <div class="col col-8 p-4 bg-light">
                     <form action="action_edit.php" method="POST">
+                        <input name="id_barang" value="<?= $id ?>" type="hidden" />
                         <div class="form-group mb-2">
-                            <label for="nama_barang">Nama Barang</label>
-                            <input id="nama_barang" name="nama_barang" class="form-control" value="<?= $nama ?>" type="text" placeholder="Nama Barang" required>
+                            <label for="nama">Nama Barang</label>
+                            <input id="nama" name="nama" class="form-control" value="<?= $nama ?>" type="text" placeholder="Nama Barang" required>
+
                         </div>
+
                         <div class="form-group mb-2">
                             <label for="harga">Harga</label>
                             <input id="harga" name="harga" class="form-control" value="<?= $harga ?>" type="number" placeholder="Harga" required>

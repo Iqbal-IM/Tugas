@@ -3,6 +3,8 @@ require_once("connection.php");
 
 $query = "SELECT * FROM tb_barang";
 $result = mysqli_query($mysqli, $query);
+
+
 ?>
 
 
@@ -38,14 +40,14 @@ $result = mysqli_query($mysqli, $query);
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2-lg-0">
                     <li class="nav-item">
-                        <a href="" class="navlink" aria-current="page">Daftar Barang</a>
+                        <a href="" class="nav-link active" aria-current="page">Daftar Barang</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div id="list-barang">
+    <div id="list-barang" style="margin-top: 20px;">
         <div class="container">
             <div class="row mb-4">
                 <div class="col">
@@ -57,7 +59,7 @@ $result = mysqli_query($mysqli, $query);
             </div>
             <div class="row">
                 <div class="col">
-                    <table class="table table-bordered">
+                    <table class="table table-bordered table-striped">
                         <thead>
                             <tr>
                                 <th scope="col">No</th>
@@ -76,8 +78,8 @@ $result = mysqli_query($mysqli, $query);
                                 <td>' . $data["nama_barang"] . '</td>
                                 <td>' . $data["harga"] . '</td>
                                 <td>
-                                    <a href="form_edit.php?id_barang=' . $data["id_barang"] . '">Edit</a>
-                                    <a href="delete.php?id_barang=' . $data["id_barang"] . '" onclick="return confirm_delete()">Delete</a>
+                                    <a href="form_edit.php?id_barang=' . $data["id_barang"] . '" class="btn btn-info">Edit</a>
+                                    <a href="delete.php?id_barang=' . $data["id_barang"] . '" onclick="return confirm_delete()" class="btn btn-danger">Delete</a>
                                 </td>
                             </tr>';
                             }

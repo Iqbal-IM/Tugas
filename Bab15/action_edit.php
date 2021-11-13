@@ -49,8 +49,8 @@ $query = "
     UPDATE tb_barang SET 
         nama_barang = '{$nama}', 
         harga = '{$harga}',
-        gambar = '{$filepath}'
-    WHERE id_barang = '{$id}'";
+        gambar = '{$filepath}',
+WHERE id_barang = '{$id}'";
 
 $insert = mysqli_query($mysqli, $query);
 
